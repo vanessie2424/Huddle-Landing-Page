@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    background: var(--Violet);
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/bg-desktop.svg);
+    
+}
+
+.logo{
+    padding: 35px;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 45px;
+    color: white;
+    margin: 9px 0;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    font-size: 400;
+    color: white;
+    margin-top: 12px;
+}
+.container{
+    display: flex;
+    padding: 30px 20px;
+}
+
+.content{
+    padding: 20px 45px;
+}
+
+#register{
+    background: white;
+    height: 40px;
+    width: 140px;
+    border-radius: 1.5rem;
+    color: var(--Violet);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+#register:hover{
+    background: var(--SoftMagenta);
+    color: white;
+    transition: .2s ease-in;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 3rem;
+    padding-left: 27rem;
+}
+footer a{
+    color: white;
+}
+
+.fa-brands{
+    border: 1px solid white;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 0.3rem;
+}
+
+.fa-brands:hover{
+    color: var(--SoftMagenta);
+    border: 1px solid var(--SoftMagenta);
+    transition: .2s ease-in;
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+@media screen and (max-width:700px) {
+
+    main{
+        background-image: url(/images/bg-mobile.svg);
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .logo{
+        max-width: 1rem;
+    }
+    .content{
+        padding: 10px 10px;
+    }
+    .phone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #mockups{
+        width: 90%;
+    }
+    h1{
+        font-weight: 600;
+        font-size: 30px;
+        padding: 10px 30px;
+        text-align: center;
+        line-height: 45px;
+    }
+
+    p{
+        text-align: center;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        padding: 10px 33px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .icon{
+        position: relative;
+        right: 13.5rem;
+    }
+    #register{
+        width: 200px;
+    }
+
+    .register-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
