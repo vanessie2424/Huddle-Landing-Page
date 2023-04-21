@@ -143,6 +143,7 @@ footer a{
     .icon{
         position: relative;
         right: 13.5rem;
+        display: flex;
     }
     #register{
         width: 200px;
